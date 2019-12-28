@@ -12,6 +12,8 @@
     "three": "^0.112.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -32,6 +34,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage" : "http://digitalDG.github.io/threejs-react-app"
-
+  "homepage": "http://digitalDG.github.io/threejs-react-app",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
